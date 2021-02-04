@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+
+    "outDir": "forWebpack",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true, //for angular to be able to use metadata we specify in our components.
+    "experimentalDecorators": true, //angular needs decorators like @Component, @Injectable, etc.
+    "removeComments": false,
+    "noImplicitAny": false,
+    "lib": [
+      "ES2016","ES2017","ES2018",
+      "DOM",
+      "ES5","ES6","ES7"
+    ],
+     "module":"ES6"
+  },
+  "files":[
+    "test_module/ADb.ts",
+    "test_module/Admin.ts",
+    "test_module/APeople.ts",
+    "test_module/Db.ts",
+    "test_module/Db_sqlite.ts",
+    "test_module/Db_storage.ts",
+    "test_module/Guest.ts",
+    "test_module/IDb.ts",
+    "test_module/index.ts",
+    "test_module/IPeople.ts",
+    "test_module/User.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
